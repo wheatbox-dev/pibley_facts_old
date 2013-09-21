@@ -1,4 +1,4 @@
-Pibleyfacts::Application.routes.draw do
+PibleyFacts::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

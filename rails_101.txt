@@ -21,4 +21,12 @@ git add .
 git commit -m "Initial commit"
 
 
-# Update README to .md format 
+# Update README to .md format
+
+subl README.rdoc
+git mv README.rdoc README.md
+git commit -am "Improve the README"
+
+
+# Create new repo at GitHub and push to it
+

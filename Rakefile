@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Pibleyfacts::Application.load_tasks
+PibleyFacts::Application.load_tasks
