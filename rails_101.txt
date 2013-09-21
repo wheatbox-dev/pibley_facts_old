@@ -36,3 +36,7 @@ git push -u origin master
 
 # Deploy to Heroku
 
+heroku create
+rake assets:precompile
+git commit -am "Add precompiled assets for Heroku"
+git push heroku master
