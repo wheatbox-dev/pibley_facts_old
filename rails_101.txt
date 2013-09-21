@@ -1,0 +1,10 @@
+# Setup new rails application without default test directory (so RSpec can be used)
+rails new <app_name> --skip-test-unit
+
+# Edit the Gemfile to include gems (currently) needed then update actual gems
+bundle update
+bundle install --without production (remembered option so bundle install from now on)
+
+# Install RSpec in place of Test::Unit
+rails generate rspec:install
+
