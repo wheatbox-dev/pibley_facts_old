@@ -1,19 +1,14 @@
 require 'spec_helper'
 
+describe "Static pages" do
+
+  subject { page }
+
   describe "Home page" do
+    before { visit root_path }
 
-    it "should have the h1 'Pibley Facts'" do
-      visit '/static_pages/home'
-      page.should have_selector('h1', :text => 'Pibley Facts')
-    end
-
-    it "should have the base title" do
-      visit '/static_pages/home'
-      page.should have_selector('title', :text => "Pibley Facts")
-    end
-
-    it "should not have a custom page title" do
-      visit '/static_pages/home'
-      page.should_not have_selector('title', :text => "| Home")
-    end
+    it { should have_selector('h1', text: 'Pibley Facts') }
+    it { should have_selector('title', text: 'Pibley Facts') }
+    it { should_not have_selector('title', text: '| Home') }
   end
+end
