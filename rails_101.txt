@@ -72,3 +72,5 @@ Add "--drb" to .rspec file in root dir
 
 # Create static_pages controller
 
+git checkout -b static-pages
+rails generate controller StaticPages home --no-test-framework
