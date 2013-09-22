@@ -74,3 +74,15 @@ Add "--drb" to .rspec file in root dir
 
 git checkout -b static-pages
 rails generate controller StaticPages home --no-test-framework
+git add .
+git commit -m "Add a StaticPages controller"
+
+
+# Create RSpec request for static_pages
+
+rails generate integration_test static_pages
+Add code to spec/requests/static_pages_spec.rb (Listing 3.9)
+Edit the app/views/static_pages/home.html.erb page to satisfy test requirements
+
+
+# 
