@@ -83,6 +83,8 @@ git commit -m "Add a StaticPages controller"
 rails generate integration_test static_pages
 Add code to spec/requests/static_pages_spec.rb (Listing 3.9)
 Edit the app/views/static_pages/home.html.erb page to satisfy test requirements
+Edit the app/views/layouts/application.html.erb page to satisfy test reqs
+Repeat previous three steps as needed
 
 
-# 
+# Commit static homepage changes, merge branch, and push to GitHub and Heroku
