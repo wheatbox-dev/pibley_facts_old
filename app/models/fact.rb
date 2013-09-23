@@ -12,4 +12,6 @@ class Fact < ActiveRecord::Base
   attr_accessible :info
 
   validates :info, presence: true, length: { maximum: 200 }, uniqueness: { case_sensitive: false }
+
+  default_scope order: 'facts.created_at DESC'
 end

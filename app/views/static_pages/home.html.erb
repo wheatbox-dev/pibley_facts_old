@@ -1,2 +1,17 @@
 <h1>Pibley Facts</h1>
 <p>This is a site dedicated to all that is Pibley. What is Pibley you ask? Read on to find out.</p>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <%= render 'shared/fact_form' %>
+    </section>
+  </aside>  
+</div>
+<div class="span8">
+    <% if @facts.any? %>
+      <ol class="facts">
+        <%= render @facts %>
+      </ol>
+      <%= will_paginate @facts %>
+    <% end %>
+</div>

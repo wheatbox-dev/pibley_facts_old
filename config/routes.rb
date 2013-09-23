@@ -1,4 +1,5 @@
 PibleyFacts::Application.routes.draw do
+  resources :facts
   get "facts/new"
 
   root to: 'static_pages#home'
