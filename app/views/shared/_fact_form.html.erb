@@ -1,7 +1,7 @@
 <%= form_for @fact, :url => { :action => :create, :controller => :facts } do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
-    <%= f.text_area :info, placeholder: "Compose new fact..." %>
+    <%= f.text_area :info, placeholder: "Submit new fact...", size: "45x4" %>
   </div>
-  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+  <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
 <% end %>
